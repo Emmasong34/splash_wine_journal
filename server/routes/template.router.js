@@ -5,8 +5,30 @@ const router = express.Router();
 /**
  * GET route template
  */
+// router.get('/', (req, res) => {
+//   // GET route code here
+//   const queryText = `SELECT * FROM wine;`;
+//   pool.query(queryText)
+//   .then((result) => {
+//       res.send(result.rows);
+//   }).catch((error) =>{
+//     console.log(`Error with Query` , error);
+//     res.sendStatus(500);
+//   });
+// });
+
 router.get('/', (req, res) => {
-  // GET route code here
+//where "wine"."user_id" =$1;  [req.user.id]
+  
+  const queryText = `SELECT * FROM "wine" ;`;
+    pool.query(queryText)
+        .then( (result) => {
+            res.send(result.rows);
+        })
+        .catch( (error) => {
+            console.log(`Error on query` , error);
+            res.sendStatus(500);
+        });
 });
 
 /**
