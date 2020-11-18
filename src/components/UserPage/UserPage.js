@@ -21,7 +21,11 @@ class UserPage extends Component {
         <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1>
         <p>Your ID is: {this.props.store.user.id}</p>
 
-        {JSON.stringify(this.props.store.wineList)}
+        {/* {JSON.stringify(this.props.store.wineList)} */}
+
+        {this.props.store.wineList.wineList.map((wine) => {
+          return <p>{wine.winery}, {wine.variety}, {wine.name}, {wine.rating}</p>
+        })}
 
         <LogOutButton className="log-in" />
       </div>

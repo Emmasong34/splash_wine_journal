@@ -2,20 +2,6 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
-/**
- * GET route template
- */
-// router.get('/', (req, res) => {
-//   // GET route code here
-//   const queryText = `SELECT * FROM wine;`;
-//   pool.query(queryText)
-//   .then((result) => {
-//       res.send(result.rows);
-//   }).catch((error) =>{
-//     console.log(`Error with Query` , error);
-//     res.sendStatus(500);
-//   });
-// });
 
 router.get('/', (req, res) => {
 //where "wine"."user_id" =$1;  [req.user.id]
