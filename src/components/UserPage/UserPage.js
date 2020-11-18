@@ -18,16 +18,20 @@ class UserPage extends Component {
   render() {
     return (
       <div>
-        <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1>
-        <p>Your ID is: {this.props.store.user.id}</p>
+        <h1>Wine List</h1>
+        {/* <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1> */}
+        {/* <p>Your ID is: {this.props.store.user.id}</p> */}
 
         {/* {JSON.stringify(this.props.store.wineList)} */}
 
         {this.props.store.wineList.wineList.map((wine) => {
-          return <p>{wine.winery}, {wine.variety}, {wine.name}, {wine.rating}</p>
+          return <div className="wineDisplay">
+                    <p>winery: {wine.winery}, variety: {wine.variety}, 
+                    name: {wine.name}, rating: {wine.rating}</p>
+                </div>
         })}
 
-        <LogOutButton className="log-in" />
+        {/* <LogOutButton className="log-in" /> */}
       </div>
     );
   }
