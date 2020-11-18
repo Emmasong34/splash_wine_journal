@@ -19,12 +19,18 @@ class UserPage extends Component {
     this.props.history.push('/viewWine')
   }
 
+  addWine = () => {
+    console.log('addWine clicked')
+    
+  }
+
 
   // this component doesn't do much to start, just renders some user info to the DOM
   render() {
     return (
       <div>
         <h1>Wine List</h1>
+        <button onClick={this.addWine}></button>
         {/* <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1> */}
         {/* <p>Your ID is: {this.props.store.user.id}</p> */}
 
