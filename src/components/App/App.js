@@ -19,6 +19,7 @@ import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import ViewWine from '../ViewWine/ViewWine';
 
 import './App.css';
 
@@ -92,6 +93,12 @@ class App extends Component {
               component={LandingPage}
               authRedirect="/user"
             />
+
+            <ProtectedRoute
+              exact path="/viewWine"
+              component={ViewWine}
+              // authRedirect="/user"
+              />
 
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
