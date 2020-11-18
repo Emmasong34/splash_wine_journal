@@ -14,14 +14,14 @@ class UserPage extends Component {
   }
 
   handleClick = (wineClicked) => {
-    console.log('clicked')
-    console.log('wineClicked', wineClicked.id)
-    this.props.history.push('/viewWine')
+    console.log('clicked');
+    console.log('wineClicked', wineClicked.id);
+    this.props.history.push('/viewWine');
   }
 
   addWine = () => {
-    console.log('addWine clicked')
-    
+    console.log('addWine clicked');
+    this.props.history.push('/addWine');
   }
 
 
@@ -30,7 +30,7 @@ class UserPage extends Component {
     return (
       <div>
         <h1>Wine List</h1>
-        <button onClick={this.addWine}></button>
+        <button onClick={this.addWine}>add wine</button>
         {/* <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1> */}
         {/* <p>Your ID is: {this.props.store.user.id}</p> */}
 

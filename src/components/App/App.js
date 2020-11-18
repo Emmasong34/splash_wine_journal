@@ -20,6 +20,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import ViewWine from '../ViewWine/ViewWine';
+import AddWine from '../AddWine/AddWine';
 
 import './App.css';
 
@@ -98,6 +99,11 @@ class App extends Component {
               exact path="/viewWine"
               component={ViewWine}
               // authRedirect="/user"
+              />
+
+            <ProtectedRoute
+              exact path="/addWine"
+              component={AddWine}
               />
 
             {/* If none of the other routes matched, we will show a 404. */}
