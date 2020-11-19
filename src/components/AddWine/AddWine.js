@@ -11,8 +11,8 @@ class AddWine extends Component {
             variety: '',
             name: '',
             rating: '',
-            year: 0,
-            price: 0,
+            year: '',
+            price: '',
             fruity: '',
             floral: '',
             nutty: '',
@@ -98,71 +98,71 @@ class AddWine extends Component {
             <div className="addFloral">
                 floral: <select name="selectFloral" id="selectFloral"
                         onChange={(event) => this.handleChange('floral', event)}>
-                            <option value="">none</option>
-                            <option value="">rose</option>
-                            <option value="">violet</option>
-                            <option value="">iris</option>
-                            <option value="">jasmine</option>
-                            <option value="">orange blossom</option>
-                            <option value="">chamomile</option>
-                            <option value="">honeysuckle</option>
-                            <option value="">lily</option>
+                            <option value="none">none</option>
+                            <option value="rose">rose</option>
+                            <option value="violet">violet</option>
+                            <option value="iris">iris</option>
+                            <option value="jasmine">jasmine</option>
+                            <option value="orange blossom">orange blossom</option>
+                            <option value="chamomile">chamomile</option>
+                            <option value="honeysuckle">honeysuckle</option>
+                            <option value="lily">lily</option>
                 </select>
             </div>
 
             <div className="addNutty">
                 nutty: <select name="selectNutty" id="selectNutty"
                         onChange={(event) => this.handleChange('nutty', event)}>
-                            <option value="">none</option>
-                            <option value="">almond</option>
-                            <option value="">hazelnut</option>
-                            <option value="">walnut</option>
+                            <option value="none">none</option>
+                            <option value="almond">almond</option>
+                            <option value="hazelnut">hazelnut</option>
+                            <option value="walnut">walnut</option>
                 </select>
             </div>
 
             <div className="addEarthy">
                 earthy: <select name="selectEarthy" id="selectEarthy"
                         onChange={(event) => this.handleChange('earthy', event)}>
-                            <option value="">none</option>
-                            <option value="">dry leaves</option>
-                            <option value="">dusty</option>
-                            <option value="">mushrooms</option>
+                            <option value="none">none</option>
+                            <option value="dry leaves">dry leaves</option>
+                            <option value="dusty">dusty</option>
+                            <option value="mushrooms">mushrooms</option>
                 </select>
             </div>
 
             <div className="addHerby">
                 herby: <select name="selectHerby" id="selectHerby"
                         onChange={(event) => this.handleChange('herby', event)}>
-                            <option value="">none</option>
-                            <option value="">hay</option>
-                            <option value="">mint</option>
-                            <option value="">rosemary</option>
-                            <option value="">thyme</option>
+                            <option value="none">none</option>
+                            <option value="hay">hay</option>
+                            <option value="mint">mint</option>
+                            <option value="rosemary">rosemary</option>
+                            <option value="thyme">thyme</option>
                 </select>
             </div>
 
             <div className="addSpicy">
                 spicy: <select name="selectSpicy" id="selectSpicy"
                         onChange={(event) => this.handleChange('spicy', event)}>
-                            <option value="">none</option>
-                            <option value="">black pepper</option>
-                            <option value="">licorice</option>
-                            <option value="">cinnamon</option>
-                            <option value="">clove</option>
+                            <option value="none">none</option>
+                            <option value="black pepper">black pepper</option>
+                            <option value="licorice">licorice</option>
+                            <option value="cinnamon">cinnamon</option>
+                            <option value="clove">clove</option>
                 </select>
             </div>
 
             <div className="addOther">
                 other: <select name="selectOther" id="selectOther"
                         onChange={(event) => this.handleChange('other', event)}>
-                            <option value="">none</option>
-                            <option value="">vanilla</option>
-                            <option value="">cedar</option>
-                            <option value="">tobacco</option>
-                            <option value="">chocolate</option>
-                            <option value="">leather</option>
-                            <option value="">butterscotch</option>
-                            <option value="">olive</option>
+                            <option value="none">none</option>
+                            <option value="vanilla">vanilla</option>
+                            <option value="cedar">cedar</option>
+                            <option value="tobacco">tobacco</option>
+                            <option value="chocolate">chocolate</option>
+                            <option value="leather">leather</option>
+                            <option value="butterscotch">butterscotch</option>
+                            <option value="olive">olive</option>
                 </select>
             </div>
 
