@@ -33,6 +33,7 @@ class AddWine extends Component {
                 [typeOfKey]: event.target.value,
             }
         })
+        console.log('new wine:', this.state.newWine)
     }
 
     render(){
@@ -78,19 +79,19 @@ class AddWine extends Component {
             
 
             <div className="addFruity">
-                fruity: <select name="selectFruity" id="selectFruity" 
-                        onChange={(event) => this.handleChange('fruity', event)}>
-                            <option value="">none</option>
-                            <option value="">berry</option>
-                            <option value="">cherry</option>
-                            <option value="">citrus</option>
-                            <option value="">apple</option>
-                            <option value="">pear</option>
-                            <option value="">apricot</option>
-                            <option value="">peach</option>
-                            <option value="">melon</option>
-                            <option value="">grapefruit</option>
-
+                fruity: <select name="selectFruity" id="selectFruity"
+                onChange={(event) => this.handleChange('fruity', event)} 
+                        >
+                            <option value="none" >none</option>
+                            <option value="berry" >berry</option>
+                            <option value="cherry" >cherry</option>
+                            <option value="citrus">citrus</option>
+                            <option value="apple">apple</option>
+                            <option value="pear">pear</option>
+                            <option value="apricot">apricot</option>
+                            <option value="peach">peach</option>
+                            <option value="melon">melon</option>
+                            <option value="grapefruit">grapefruit</option>
                 </select>
             </div>
 
