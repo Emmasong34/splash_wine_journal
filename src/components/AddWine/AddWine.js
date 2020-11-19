@@ -25,6 +25,15 @@ class AddWine extends Component {
         }
     }
 
+    saveWine = () => {
+        console.log(this.state.newWine);
+        this.props.dispatch({type: 'ADD_WINE', payload: this.state})
+
+    }
+
+
+
+
     handleChange = (typeOfKey, event) => {
         event.preventDefault();
         this.setState({
@@ -33,14 +42,14 @@ class AddWine extends Component {
                 [typeOfKey]: event.target.value,
             }
         })
-        console.log('new wine:', this.state.newWine)
+        // console.log('new wine:', this.state.newWine)
     }
 
     render(){
         return(
 
             <>
-            <form>
+            <form >
             <div className="wineryInput">
                 <label className="addWinery">winery:</label>
                     <input type="text" id="addWineWinery" placeholder="winery"
@@ -73,7 +82,7 @@ class AddWine extends Component {
 
             <div className="priceInput">
                 <label className="addPrice">price:</label>
-                    <input type="number" id="addWinePrice" placeholder="price"
+                    <input type="decimal" id="addWinePrice" placeholder="price"
                     onChange={(event) => this.handleChange('price', event)}></input>
             </div>
             
@@ -166,6 +175,21 @@ class AddWine extends Component {
                 </select>
             </div>
 
+            <div className="addOverall">
+                overall: <select name="selectOverall" id="selectOverall"
+                        onChange={(event) => this.handleChange('overall', event)}>
+                            <option value="none">none</option>
+                            <option value="aggressive">aggressive</option>
+                            <option value="balanced">balanced</option>
+                            <option value="crispy">crispy</option>
+                            <option value="delicate">delicate</option>
+                            <option value="rich">rich</option>
+                            <option value="thin">thin</option>
+                            <option value="sweet">sweet</option>
+                            <option value="dry">dry</option>
+                </select>
+            </div>
+
             <div className="notesInput">
                 <label className="addNotes">notes:</label>
                     <input type="text" id="addWineNotes" placeholder="notes"
@@ -173,7 +197,7 @@ class AddWine extends Component {
             </div>
 
 
-
+            <button onClick={this.saveWine}>save</button>
             </form>
             </>
         )

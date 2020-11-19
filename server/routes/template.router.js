@@ -25,11 +25,13 @@ router.post('/', (req, res) => {
                         "fruity", "floral", "nutty", "earthy", "herby", "spicy", "other", "overall", "notes")
                         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16);`;
     console.log(req.body);
-    pool.query(queryText, [req.body.user_id, req.body.winery, req.body.variety, req.body.name, req.body.rating,
-                            req.body.year, req.body.price, req.body.fruity, req.body.floral, req.body.nutty, req.body.earthy, 
-                            req.body.herby, req.body.spicy, req.body.other, req.body.overall, req.body.notes])
+    pool.query(queryText, [req.user.id, req.body.newWine.winery, req.body.newWine.variety, req.body.newWine.name, 
+                            req.body.newWine.rating, req.body.newWine.year, req.body.newWine.price, req.body.newWine.fruity, 
+                            req.body.newWine.floral, req.body.newWine.nutty, req.body.newWine.earthy, 
+                            req.body.newWine.herby, req.body.newWine.spicy, req.body.newWine.other, 
+                            req.body.newWine.overall, req.body.newWine.notes])
       .then((result) => {
-            res.sentStatus(200);
+            res.sendStatus(200);
       })
       .catch((error) => {
         console.log('error on query post', error);
