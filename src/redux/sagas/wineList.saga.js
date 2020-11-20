@@ -3,7 +3,8 @@ import axios from 'axios';
 
 function* wineListSaga(){
     yield takeLatest ('FETCH_WINE_LIST', fetchWineList);
-    yield takeEvery ('GET_WINE_DETAILS', getWineDetails)
+    yield takeEvery ('GET_WINE_DETAILS', getWineDetails);
+    yield takeEvery ('DELETE_WINE', deleteWine);
     yield takeEvery ('ADD_WINE', addWine);
 }
 
@@ -22,6 +23,12 @@ function* getWineDetails(wineClicked){
             catch(error){
                 console.log('error in getting details from wine DB')
             }
+}
+
+function* deleteWine(action){
+    console.log('delete saga', action)
+    yield axios.delete(`/api/wine/${action.payload}`);
+    yield put ({type: 'FETCH_WINE_LIST'});
 }
 
 function* addWine(action){

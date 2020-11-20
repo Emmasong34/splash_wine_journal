@@ -13,6 +13,10 @@ class ViewWine extends Component {
         // this.props.dispatch({type: 'SET_WINE_LIST'});
       }
 
+      onClickDelete = (id) => {
+          this.props.dispatch({type: 'DELETE_WINE', payload: id});
+      }
+
     render(){
         return (
             <div>
@@ -33,9 +37,10 @@ class ViewWine extends Component {
                             other: {wine.other}, overall: {wine.overall}, 
                             notes: {wine.notes}</p>
                             
-                        </div>
+             
+                <button>home</button>               <button>edit</button> <button onClick={() => this.onClickDelete(wine.id)}>delete</button> 
+                </div>
                 })}
-                <button>home</button>               <button>edit</button> <button>delete</button> 
             </div>
 
         )
