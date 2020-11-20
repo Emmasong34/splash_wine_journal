@@ -21,6 +21,7 @@ import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import ViewWine from '../ViewWine/ViewWine';
 import AddWine from '../AddWine/AddWine';
+import EditWine from '../EditWine/EditWine';
 
 import './App.css';
 
@@ -104,6 +105,11 @@ class App extends Component {
             <ProtectedRoute
               exact path="/addWine"
               component={AddWine}
+              />
+
+            <ProtectedRoute
+              exact path="/editWine"
+              component={EditWine}
               />
 
             {/* If none of the other routes matched, we will show a 404. */}
