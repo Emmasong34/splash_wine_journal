@@ -10,7 +10,7 @@ class ViewWine extends Component {
       }
 
       getWineList = () => {
-        this.props.dispatch({type: 'FETCH_WINE_LIST'});
+        // this.props.dispatch({type: 'SET_WINE_LIST'});
       }
 
     render(){
@@ -20,7 +20,7 @@ class ViewWine extends Component {
             
             {/* {JSON.stringify(this.props.store.wineList)}; */}
             
-
+                {/* {this.props.wineList.wine.id} */}
                 {this.props.store.wineList.wineList.map((wine) => {
                     return <div className="viewWineDisplay" key={wine.id}>
                         <h1>Details for {wine.name}</h1>
@@ -35,6 +35,7 @@ class ViewWine extends Component {
                             
                         </div>
                 })}
+                <button>home</button>               <button>edit</button> <button>delete</button> 
             </div>
 
         )

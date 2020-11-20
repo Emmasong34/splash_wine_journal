@@ -16,6 +16,7 @@ class UserPage extends Component {
   handleClick = (wineClicked) => {
     console.log('clicked');
     console.log('wineClicked', wineClicked.id);
+    this.props.dispatch({type: 'GET_WINE_DETAILS', payload: wineClicked });
     this.props.history.push('/viewWine');
   }
 
@@ -40,7 +41,7 @@ class UserPage extends Component {
           return <div className="wineDisplay" key={wine.id}>
                     <p>winery: {wine.winery}, variety: {wine.variety}, 
                     name: {wine.name}, rating: {wine.rating}</p>
-                    <button className="viewDetails" onClick={() => {this.handleClick(wine)}}>view wine</button>
+                    <button className="viewDetails" key={wine.id} onClick={() => {this.handleClick(wine)}}>view wine</button>
                 </div>
         })}
 
