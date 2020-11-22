@@ -13,12 +13,22 @@ class ViewWine extends Component {
         // this.props.dispatch({type: 'SET_WINE_LIST'});
       }
 
-      onClickDelete = (id) => {
+      editWine = (id) => {
+        console.log('edit wine clicked, this is the id for wine selected', id)
+        this.props.history.push('/editWine')
+      }
+
+      deleteWine = (id) => {
           this.props.dispatch({type: 'DELETE_WINE', payload: id});
       }
 
+  
+
+
+
     render(){
         return (
+            
             <div>
             
             
@@ -38,10 +48,17 @@ class ViewWine extends Component {
                             notes: {wine.notes}</p>
                             
              
-                <button>home</button>               <button>edit</button> <button onClick={() => this.onClickDelete(wine.id)}>delete</button> 
+                <button>home</button>               <button onClick={() => this.editWine(wine.id)}>edit</button> <button onClick={() => this.deleteWine(wine.id)}>delete</button> 
                 </div>
                 })}
+
+
+
+                  
+
             </div>
+
+            
 
         )
     }

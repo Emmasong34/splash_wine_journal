@@ -5,6 +5,7 @@ function* wineListSaga(){
     yield takeLatest ('FETCH_WINE_LIST', fetchWineList);
     yield takeEvery ('GET_WINE_DETAILS', getWineDetails);
     yield takeEvery ('DELETE_WINE', deleteWine);
+    yield takeEvery ('EDIT_WINE', editWine);
     yield takeEvery ('ADD_WINE', addWine);
 }
 
@@ -29,6 +30,12 @@ function* deleteWine(action){
     console.log('delete saga', action)
     yield axios.delete(`/api/wine/${action.payload}`);
     yield put ({type: 'FETCH_WINE_LIST'});
+}
+
+function* editWine(action){
+    console.log('edit wine saga action.payload:', action.payload);
+    yield axios.put(`/api/wine/${action.payload.id}` , action.payload);
+    // yield put ({type: 'EDIT_WINE_LIST'});
 }
 
 function* addWine(action){

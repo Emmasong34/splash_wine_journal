@@ -25,12 +25,12 @@ class AddWine extends Component {
         }
     }
 
+
+
     saveWine = () => {
         console.log(this.state.newWine);
-        this.props.dispatch({type: 'ADD_WINE', payload: this.state})
-
+        // this.props.dispatch({type: 'ADD_WINE', payload: this.state})
     }
-
 
 
 
@@ -44,6 +44,8 @@ class AddWine extends Component {
         })
         // console.log('new wine:', this.state.newWine)
     }
+
+
 
     render(){
         return(

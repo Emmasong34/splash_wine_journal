@@ -52,15 +52,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   console.log('in PUT function', req.params.id);
-  let id = req.params.id
+  console.log(req.body);
+  id = req.params.id
   let queryText = `UPDATE "wine" SET 
   user_id = $1, winery = $2, variety = $3, name = $4, rating = $5, year = $6, price = $7, fruity = $8, 
   floral = $9, nutty = $10, earthy = $11, herby = $12, spicy = $13, other = $14, overall = $15, notes = $16;`;
-  pool.query(queryText, [id, req.body.newWine.winery, req.body.newWine.variety, req.body.newWine.name, 
-    req.body.newWine.rating, req.body.newWine.year, req.body.newWine.price, req.body.newWine.fruity, 
-    req.body.newWine.floral, req.body.newWine.nutty, req.body.newWine.earthy, 
-    req.body.newWine.herby, req.body.newWine.spicy, req.body.newWine.other, 
-    req.body.newWine.overall, req.body.newWine.notes])
+  pool.query(queryText, [id, req.body.winery, req.body.variety, req.body.name, 
+    req.body.rating, req.body.year, req.body.price, req.body.fruity, 
+    req.body.floral, req.body.nutty, req.body.earthy, 
+    req.body.herby, req.body.spicy, req.body.other, 
+    req.body.overall, req.body.notes])
     .then((result) => {
       res.sendStatus(200);
     })
