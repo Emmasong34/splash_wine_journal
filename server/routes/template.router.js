@@ -56,12 +56,12 @@ router.put('/:id', (req, res) => {
   id = req.params.id
   let queryText = `UPDATE "wine" SET 
   user_id = $1, winery = $2, variety = $3, name = $4, rating = $5, year = $6, price = $7, fruity = $8, 
-  floral = $9, nutty = $10, earthy = $11, herby = $12, spicy = $13, other = $14, overall = $15, notes = $16;`;
-  pool.query(queryText, [id, req.body.winery, req.body.variety, req.body.name, 
+  floral = $9, nutty = $10, earthy = $11, herby = $12, spicy = $13, other = $14, overall = $15, notes = $16 WHERE id=$17;`;
+  pool.query(queryText, [req.user.id, req.body.winery, req.body.variety, req.body.name, 
     req.body.rating, req.body.year, req.body.price, req.body.fruity, 
     req.body.floral, req.body.nutty, req.body.earthy, 
     req.body.herby, req.body.spicy, req.body.other, 
-    req.body.overall, req.body.notes])
+    req.body.overall, req.body.notes, id])
     .then((result) => {
       res.sendStatus(200);
     })
