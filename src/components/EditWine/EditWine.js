@@ -48,7 +48,15 @@ class EditWine extends Component {
             rating: this.state.editWine.rating,
             year: this.state.editWine.year,
             price: this.state.editWine.price,
-            nutty: this.state.editWine.nutty
+            fruity: this.state.editWine.fruity,
+            floral: this.state.editWine.floral,
+            nutty: this.state.editWine.nutty,
+            earthy: this.state.editWine.earthy,
+            herby: this.state.editWine.herby,
+            spicy: this.state.editWine.spicy,
+            other: this.state.editWine.other,
+            overall: this.state.editWine.overall,
+            notes: this.state.editWine.notes
         }
         
         this.props.dispatch({type: 'EDIT_WINE', payload: wine});
