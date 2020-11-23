@@ -91,8 +91,7 @@ class AddWine extends Component {
 
             <div className="addFruity">
                 fruity: <select name="selectFruity" id="selectFruity"
-                onChange={(event) => this.handleChange('fruity', event)} 
-                        >
+                onChange={(event) => this.handleChange('fruity', event)} >
                             <option value="none" >none</option>
                             <option value="berry" >berry</option>
                             <option value="cherry" >cherry</option>
