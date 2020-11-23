@@ -87,7 +87,8 @@ class EditWine extends Component {
 
                             <div className="editNutty">
                                 nutty: <select name="editSelectNutty" id="editSelectNutty" placeholder={wine.nutty}
-                                    onChange={(event) => this.handleChange('editNutty', event)}>
+                                    onChange={(event) => this.handleChange('nutty', event)}>
+                                    <option value={wine.nutty}>{wine.nutty}</option>
                                     <option value="none">none</option>
                                     <option value="almond">almond</option>
                                     <option value="hazelnut">hazelnut</option>
