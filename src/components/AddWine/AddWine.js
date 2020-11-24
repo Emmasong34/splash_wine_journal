@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 class AddWine extends Component {
@@ -51,153 +54,188 @@ class AddWine extends Component {
         return(
 
             <>
-            <form >
-            <div className="wineryInput">
-                <label className="addWinery">winery:</label>
-                    <input type="text" id="addWineWinery" placeholder="winery"
-                    onChange={(event) => this.handleChange('winery', event)}></input>
-            </div>
-
-            <div className="varietyInput">
-                <label className="addVariety">variety:</label>
-                    <input type="text" id="addWineVariety" placeholder="variety"
-                    onChange={(event) => this.handleChange('variety', event)}></input>
-            </div>
-
-            <div className="nameInput">
-                <label className="addName">name:</label>
-                    <input type="text" id="addWineName" placeholder="name"
-                    onChange={(event) => this.handleChange('name', event)}></input>
-            </div>
-
-            <div className="ratingInput">
-                <label className="addRating">rating:</label>
-                    <input type="text" id="addWineRating" placeholder="rating"
-                    onChange={(event) => this.handleChange('rating', event)}></input>
-            </div>
-
-            <div className="yearInput">
-                <label className="addYear">year:</label>
-                    <input type="number" id="addWineYear" placeholder="year"
-                    onChange={(event) => this.handleChange('year', event)}></input>
-            </div>
-
-            <div className="priceInput">
-                <label className="addPrice">price:</label>
-                    <input type="decimal" id="addWinePrice" placeholder="price"
-                    onChange={(event) => this.handleChange('price', event)}></input>
-            </div>
             
+            <form >
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="wineryInput">
+                            <label className="addWinery">winery:</label>
+                                <input type="text" id="addWineWinery" placeholder="winery"
+                                onChange={(event) => this.handleChange('winery', event)}></input>
+                        </div>
+                    
+                        <div className="varietyInput">
+                            <label className="addVariety">variety:</label>
+                                <input type="text" id="addWineVariety" placeholder="variety"
+                                onChange={(event) => this.handleChange('variety', event)}></input>
+                        </div>
+                    </Col>
 
-            <div className="addFruity">
-                fruity: <select name="selectFruity" id="selectFruity"
-                onChange={(event) => this.handleChange('fruity', event)} >
-                            <option value="none" >none</option>
-                            <option value="berry" >berry</option>
-                            <option value="cherry" >cherry</option>
-                            <option value="citrus">citrus</option>
-                            <option value="apple">apple</option>
-                            <option value="pear">pear</option>
-                            <option value="apricot">apricot</option>
-                            <option value="peach">peach</option>
-                            <option value="melon">melon</option>
-                            <option value="grapefruit">grapefruit</option>
-                </select>
-            </div>
+                    <Col>
+                        <div className="nameInput">
+                            <label className="addName">name:</label>
+                                <input type="text" id="addWineName" placeholder="name"
+                                onChange={(event) => this.handleChange('name', event)}></input>
+                        </div>
 
-            <div className="addFloral">
-                floral: <select name="selectFloral" id="selectFloral"
-                        onChange={(event) => this.handleChange('floral', event)}>
-                            <option value="none">none</option>
-                            <option value="rose">rose</option>
-                            <option value="violet">violet</option>
-                            <option value="iris">iris</option>
-                            <option value="jasmine">jasmine</option>
-                            <option value="orange blossom">orange blossom</option>
-                            <option value="chamomile">chamomile</option>
-                            <option value="honeysuckle">honeysuckle</option>
-                            <option value="lily">lily</option>
-                </select>
-            </div>
+                        <div className="ratingInput">
+                            <label className="addRating">rating:</label>
+                                <input type="text" id="addWineRating" placeholder="rating"
+                                onChange={(event) => this.handleChange('rating', event)}></input>
+                        </div>
+                    </Col>
 
-            <div className="addNutty">
-                nutty: <select name="selectNutty" id="selectNutty"
-                        onChange={(event) => this.handleChange('nutty', event)}>
-                            <option value="none">none</option>
-                            <option value="almond">almond</option>
-                            <option value="hazelnut">hazelnut</option>
-                            <option value="walnut">walnut</option>
-                </select>
-            </div>
+                    <Col>
+                        <div className="yearInput">
+                            <label className="addYear">year:</label>
+                                <input type="number" id="addWineYear" placeholder="year"
+                                onChange={(event) => this.handleChange('year', event)}></input>
+                        </div>
 
-            <div className="addEarthy">
-                earthy: <select name="selectEarthy" id="selectEarthy"
-                        onChange={(event) => this.handleChange('earthy', event)}>
-                            <option value="none">none</option>
-                            <option value="dry leaves">dry leaves</option>
-                            <option value="dusty">dusty</option>
-                            <option value="mushrooms">mushrooms</option>
-                </select>
-            </div>
+                        <div className="priceInput">
+                            <label className="addPrice">price:</label>
+                                <input type="decimal" id="addWinePrice" placeholder="price"
+                                onChange={(event) => this.handleChange('price', event)}></input>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
-            <div className="addHerby">
-                herby: <select name="selectHerby" id="selectHerby"
-                        onChange={(event) => this.handleChange('herby', event)}>
-                            <option value="none">none</option>
-                            <option value="hay">hay</option>
-                            <option value="mint">mint</option>
-                            <option value="rosemary">rosemary</option>
-                            <option value="thyme">thyme</option>
-                </select>
-            </div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="addFruity">
+                            fruity: <select name="selectFruity" id="selectFruity"
+                            onChange={(event) => this.handleChange('fruity', event)} >
+                                        <option value="none" >none</option>
+                                        <option value="berry" >berry</option>
+                                        <option value="cherry" >cherry</option>
+                                        <option value="citrus">citrus</option>
+                                        <option value="apple">apple</option>
+                                        <option value="pear">pear</option>
+                                        <option value="apricot">apricot</option>
+                                        <option value="peach">peach</option>
+                                        <option value="melon">melon</option>
+                                        <option value="grapefruit">grapefruit</option>
+                            </select>
+                        </div>
+                    </Col>
 
-            <div className="addSpicy">
-                spicy: <select name="selectSpicy" id="selectSpicy"
-                        onChange={(event) => this.handleChange('spicy', event)}>
-                            <option value="none">none</option>
-                            <option value="black pepper">black pepper</option>
-                            <option value="licorice">licorice</option>
-                            <option value="cinnamon">cinnamon</option>
-                            <option value="clove">clove</option>
-                </select>
-            </div>
+                    <Col>
+                        <div className="addFloral">
+                            floral: <select name="selectFloral" id="selectFloral"
+                                    onChange={(event) => this.handleChange('floral', event)}>
+                                        <option value="none">none</option>
+                                        <option value="rose">rose</option>
+                                        <option value="violet">violet</option>
+                                        <option value="iris">iris</option>
+                                        <option value="jasmine">jasmine</option>
+                                        <option value="orange blossom">orange blossom</option>
+                                        <option value="chamomile">chamomile</option>
+                                        <option value="honeysuckle">honeysuckle</option>
+                                        <option value="lily">lily</option>
+                            </select>
+                        </div>
+                    </Col>
 
-            <div className="addOther">
-                other: <select name="selectOther" id="selectOther"
-                        onChange={(event) => this.handleChange('other', event)}>
-                            <option value="none">none</option>
-                            <option value="vanilla">vanilla</option>
-                            <option value="cedar">cedar</option>
-                            <option value="tobacco">tobacco</option>
-                            <option value="chocolate">chocolate</option>
-                            <option value="leather">leather</option>
-                            <option value="butterscotch">butterscotch</option>
-                            <option value="olive">olive</option>
-                </select>
-            </div>
+                    <Col>
+                        <div className="addNutty">
+                            nutty: <select name="selectNutty" id="selectNutty"
+                                    onChange={(event) => this.handleChange('nutty', event)}>
+                                        <option value="none">none</option>
+                                        <option value="almond">almond</option>
+                                        <option value="hazelnut">hazelnut</option>
+                                        <option value="walnut">walnut</option>
+                            </select>
+                        </div>
+                    </Col>
+                </Row>
 
-            <div className="addOverall">
-                overall: <select name="selectOverall" id="selectOverall"
-                        onChange={(event) => this.handleChange('overall', event)}>
-                            <option value="none">none</option>
-                            <option value="aggressive">aggressive</option>
-                            <option value="balanced">balanced</option>
-                            <option value="crispy">crispy</option>
-                            <option value="delicate">delicate</option>
-                            <option value="rich">rich</option>
-                            <option value="thin">thin</option>
-                            <option value="sweet">sweet</option>
-                            <option value="dry">dry</option>
-                </select>
-            </div>
+                <Row>
+                    <Col>
+                        <div className="addEarthy">
+                            earthy: <select name="selectEarthy" id="selectEarthy"
+                                    onChange={(event) => this.handleChange('earthy', event)}>
+                                        <option value="none">none</option>
+                                        <option value="dry leaves">dry leaves</option>
+                                        <option value="dusty">dusty</option>
+                                        <option value="mushrooms">mushrooms</option>
+                            </select>
+                        </div>
+                    </Col>
 
-            <div className="notesInput">
-                <label className="addNotes">notes:</label>
-                    <input type="text" id="addWineNotes" placeholder="notes"
-                    onChange={(event) => this.handleChange('notes', event)}></input>
-            </div>
+                    <Col>
+                        <div className="addHerby">
+                            herby: <select name="selectHerby" id="selectHerby"
+                                    onChange={(event) => this.handleChange('herby', event)}>
+                                        <option value="none">none</option>
+                                        <option value="hay">hay</option>
+                                        <option value="mint">mint</option>
+                                        <option value="rosemary">rosemary</option>
+                                        <option value="thyme">thyme</option>
+                            </select>
+                        </div>
+                    </Col>
 
+                    <Col>
+                        <div className="addSpicy">
+                            spicy: <select name="selectSpicy" id="selectSpicy"
+                                    onChange={(event) => this.handleChange('spicy', event)}>
+                                        <option value="none">none</option>
+                                        <option value="black pepper">black pepper</option>
+                                        <option value="licorice">licorice</option>
+                                        <option value="cinnamon">cinnamon</option>
+                                        <option value="clove">clove</option>
+                            </select>
+                        </div>
+                    </Col>
+                </Row>
 
+                <Row>
+                    <Col>
+                        <div className="addOther">
+                            other: <select name="selectOther" id="selectOther"
+                                    onChange={(event) => this.handleChange('other', event)}>
+                                        <option value="none">none</option>
+                                        <option value="vanilla">vanilla</option>
+                                        <option value="cedar">cedar</option>
+                                        <option value="tobacco">tobacco</option>
+                                        <option value="chocolate">chocolate</option>
+                                        <option value="leather">leather</option>
+                                        <option value="butterscotch">butterscotch</option>
+                                        <option value="olive">olive</option>
+                            </select>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div className="addOverall">
+                            overall: <select name="selectOverall" id="selectOverall"
+                                    onChange={(event) => this.handleChange('overall', event)}>
+                                        <option value="none">none</option>
+                                        <option value="aggressive">aggressive</option>
+                                        <option value="balanced">balanced</option>
+                                        <option value="crispy">crispy</option>
+                                        <option value="delicate">delicate</option>
+                                        <option value="rich">rich</option>
+                                        <option value="thin">thin</option>
+                                        <option value="sweet">sweet</option>
+                                        <option value="dry">dry</option>
+                            </select>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div className="notesInput">
+                            <label className="addNotes">notes:</label>
+                                <input type="text" id="addWineNotes" placeholder="notes"
+                                onChange={(event) => this.handleChange('notes', event)}></input>
+                        </div>
+                    </Col>
+                </Row>
+
+            </Container>
             <button onClick={this.saveWine}>save</button>
             </form>
             </>

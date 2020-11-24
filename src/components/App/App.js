@@ -22,6 +22,7 @@ import RegisterPage from '../RegisterPage/RegisterPage';
 import ViewWine from '../ViewWine/ViewWine';
 import AddWine from '../AddWine/AddWine';
 import EditWine from '../EditWine/EditWine';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
