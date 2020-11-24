@@ -73,37 +73,37 @@ class EditWine extends Component {
                           
                             <div className="editWineryInput">
                                 <label className="editWinery">winery:</label>
-                                    <input type="text" id="editWineWinery" defaultValue={wine.winery}
+                                    <input type="text" id="editWineWinery" placeholder={wine.winery}
                                     onChange={(event) => this.handleChange('winery', event)}></input>
                             </div>
 
                             <div className="editVarietyInput">
                                 <label className="editVariety">variety:</label>
-                                    <input type="text" id="editWineVariety" defaultValue={wine.variety}
+                                    <input type="text" id="editWineVariety" placeholder={wine.variety}
                                     onChange={(event) => this.handleChange('variety', event)}></input>
                             </div>
 
                             <div className="editNameInput">
                                 <label className="editName">name:</label>
-                                    <input type="text" id="editWineName" defaultValue={wine.name}
+                                    <input type="text" id="editWineName" placeholder={wine.name}
                                     onChange={(event) => this.handleChange('name', event)}></input>
                             </div>
 
                             <div className="editRatingInput">
                                 <label className="editRating">rating:</label>
-                                    <input type="text" id="editWineRating" defaultValue={wine.rating}
+                                    <input type="text" id="editWineRating" placeholder={wine.rating}
                                     onChange={(event) => this.handleChange('rating', event)}></input>
                             </div>
 
                             <div className="editYearInput">
                                 <label className="editYear">year:</label>
-                                    <input type="number" id="editWineYear" defaultValue={wine.rating}
+                                    <input type="number" id="editWineYear" placeholder={wine.rating}
                                     onChange={(event) => this.handleChange('year', event)}></input>
                             </div>
 
                             <div className="editPriceInput">
                                 <label className="editPrice">price:</label>
-                                    <input type="decimal" id="editWinePrice" defaultValue={wine.price}
+                                    <input type="decimal" id="editWinePrice" placeholder={wine.price}
                                     onChange={(event) => this.handleChange('price', event)}></input>
                             </div>
 
