@@ -7,6 +7,15 @@ body,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
+  /* background: url(https://t4.ftcdn.net/jpg/02/29/23/91/360_F_229239192_KipmCaOAh4QZzS73KOIVoi75eGQAUECf.jpg) no-repeat center center fixed; */
+  /* url(https://images.assetsdelivery.com/compings_v2/jagcz/jagcz1208/jagcz120800186.jpg); */
+  /* background: url(https://admin.acceleratingscience.com/food/wp-content/uploads/sites/5/2015/08/splash_of_white_wine__isolated_on_a_white_background.jpg)no-repeat center center fixed; */
+  background: url(https://thecraftycask.com/wp-content/uploads/2018/06/iStock-508752521_medium.jpg) no-repeat center center fixed;
+  /* background-repeat: round; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 img {

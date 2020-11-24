@@ -58,13 +58,14 @@ class AddWine extends Component {
             <form >
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={6}>
                         <div className="wineryInput">
                             <label className="addWinery">winery:</label>
                                 <input type="text" id="addWineWinery" placeholder="winery"
                                 onChange={(event) => this.handleChange('winery', event)}></input>
                         </div>
-                    
+                    </Col>
+                    <Col sm={6}>
                         <div className="varietyInput">
                             <label className="addVariety">variety:</label>
                                 <input type="text" id="addWineVariety" placeholder="variety"
@@ -73,13 +74,14 @@ class AddWine extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col sm={6}>
                         <div className="nameInput">
                             <label className="addName">name:</label>
                                 <input type="text" id="addWineName" placeholder="name"
                                 onChange={(event) => this.handleChange('name', event)}></input>
                         </div>
-
+                    </Col>
+                    <Col sm={6}>
                         <div className="ratingInput">
                             <label className="addRating">rating:</label>
                                 <input type="text" id="addWineRating" placeholder="rating"
@@ -88,13 +90,14 @@ class AddWine extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col sm={6}>
                         <div className="yearInput">
                             <label className="addYear">year:</label>
                                 <input type="number" id="addWineYear" placeholder="year"
                                 onChange={(event) => this.handleChange('year', event)}></input>
                         </div>
-
+                    </Col>
+                    <Col sm={6}>
                         <div className="priceInput">
                             <label className="addPrice">price:</label>
                                 <input type="decimal" id="addWinePrice" placeholder="price"
@@ -103,7 +106,7 @@ class AddWine extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col sm={4}>
                         <div className="addFruity">
                             fruity: <select name="selectFruity" id="selectFruity"
                             onChange={(event) => this.handleChange('fruity', event)} >
@@ -121,7 +124,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="addFloral">
                             floral: <select name="selectFloral" id="selectFloral"
                                     onChange={(event) => this.handleChange('floral', event)}>
@@ -138,7 +141,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="addNutty">
                             nutty: <select name="selectNutty" id="selectNutty"
                                     onChange={(event) => this.handleChange('nutty', event)}>
@@ -152,7 +155,7 @@ class AddWine extends Component {
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col sm={4}>
                         <div className="addEarthy">
                             earthy: <select name="selectEarthy" id="selectEarthy"
                                     onChange={(event) => this.handleChange('earthy', event)}>
@@ -164,7 +167,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="addHerby">
                             herby: <select name="selectHerby" id="selectHerby"
                                     onChange={(event) => this.handleChange('herby', event)}>
@@ -177,7 +180,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="addSpicy">
                             spicy: <select name="selectSpicy" id="selectSpicy"
                                     onChange={(event) => this.handleChange('spicy', event)}>
@@ -192,7 +195,7 @@ class AddWine extends Component {
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col sm={4}>
                         <div className="addOther">
                             other: <select name="selectOther" id="selectOther"
                                     onChange={(event) => this.handleChange('other', event)}>
@@ -208,7 +211,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="addOverall">
                             overall: <select name="selectOverall" id="selectOverall"
                                     onChange={(event) => this.handleChange('overall', event)}>
@@ -225,7 +228,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col sm={4}>
                         <div className="notesInput">
                             <label className="addNotes">notes:</label>
                                 <input type="text" id="addWineNotes" placeholder="notes"
