@@ -55,8 +55,9 @@ class AddWine extends Component {
         return(
 
             <>
-            <h1>Add Wine</h1>
+            
             <form className="addWineDisplay">
+            <h1>Add Wine</h1>
             <Container>
                 <Row>
                     <Col sm={6}>
