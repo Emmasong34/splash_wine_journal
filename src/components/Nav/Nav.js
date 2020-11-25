@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
 const Nav = (props) => {
   let loginLinkData = {
@@ -17,9 +18,10 @@ const Nav = (props) => {
   }
 
   return (
+    <Jumbotron fluid className="jumbotron">
     <div className="nav">
       <Link to="/home">
-        <h2 className="nav-title">Prime Solo Project</h2>
+        <h2 className="nav-title">Splash Wine Journal</h2>
       </Link>
       <div className="nav-right">
         <Link className="nav-link" to={loginLinkData.path}>
@@ -43,7 +45,9 @@ const Nav = (props) => {
         </Link>
       </div>
     </div>
+    </Jumbotron>
   );
+  
 };
 
 export default connect(mapStoreToProps)(Nav);

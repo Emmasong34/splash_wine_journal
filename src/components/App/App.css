@@ -124,7 +124,10 @@ input {
 .wineDisplay{
   border-radius: 25px;
   color: rgb(85, 25, 33);
-  background: rgb(0, 0, 0, 0.1); 
+  /* background: rgb(85, 25, 33, .2); */
+  background: rgb(238, 230, 164, .3);
+  /* color: rgb(245, 242, 184); */
+  /* background: rgb(0, 0, 0, 0.1);  */
   margin: 20px;
   padding: 20px;
 }

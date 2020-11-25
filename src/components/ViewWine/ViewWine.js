@@ -35,7 +35,7 @@ class ViewWine extends Component {
             
             <div >
             
-            
+            {/* JSON stringify is for testing purposes */}
             {/* {JSON.stringify(this.props.store.wineList)}; */}
             
                 {/* {this.props.wineList.wine.id} */}
