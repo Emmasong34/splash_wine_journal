@@ -4,6 +4,7 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './EditWine.css';
 
 
 class EditWine extends Component {
@@ -67,11 +68,13 @@ class EditWine extends Component {
 
     render(){
         return (
+            
             <div>
+                <h1>Edit Wine</h1>
                 <Container>
                 {/* {JSON.stringify(this.props.store.wineList.wineList[0])};  */}
                     {this.props.store.wineList.wineList.map((wine) => {
-                        return <div className="viewWineDisplay" key={wine.id}>
+                        return <div className="editWineDisplay" key={wine.id}>
                             <Row>
                                 <Col>
                                     <div className="editWineryInput">

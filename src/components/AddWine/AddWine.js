@@ -4,6 +4,7 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './AddWine.css';
 
 
 class AddWine extends Component {
@@ -54,8 +55,8 @@ class AddWine extends Component {
         return(
 
             <>
-            
-            <form >
+            <h1>Add Wine</h1>
+            <form className="addWineDisplay">
             <Container>
                 <Row>
                     <Col sm={6}>

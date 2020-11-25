@@ -1,0 +1,14 @@
+h1{
+    color: rgb(85, 25, 33);
+    
+}
+
+
+.editWineDisplay{
+    border-radius: 25px;
+    color: rgb(85, 25, 33);
+    background: rgb(0, 0, 0, 0.1); 
+    margin: 20px;
+    padding: 20px;
+  }
+
