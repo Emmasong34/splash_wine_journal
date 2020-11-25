@@ -40,7 +40,7 @@ class ViewWine extends Component {
             
                 {/* {this.props.wineList.wine.id} */}
                 {this.props.store.wineList.wineList.map((wine) => {
-                    return <div className="viewWineDisplay" key={wine.id}>
+                    return <div className="wineDisplay" key={wine.id}>
                         <h1>Details for {wine.name}</h1>
                         <Container>
                             <Row>

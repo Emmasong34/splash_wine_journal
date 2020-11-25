@@ -9,6 +9,7 @@ import './AddWine.css';
 
 class AddWine extends Component {
 
+
     state = {
         newWine: {
             winery: '',
@@ -46,7 +47,6 @@ class AddWine extends Component {
                 [typeOfKey]: event.target.value,
             }
         })
-        // console.log('new wine:', this.state.newWine)
     }
 
 
@@ -55,8 +55,7 @@ class AddWine extends Component {
         return(
 
             <>
-            
-            <form className="addWineDisplay">
+            <form className="wineDisplay">
             <h1>Add Wine</h1>
             <Container>
                 <Row>

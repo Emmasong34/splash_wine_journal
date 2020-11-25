@@ -74,7 +74,7 @@ class EditWine extends Component {
                 <Container>
                 {/* {JSON.stringify(this.props.store.wineList.wineList[0])};  */}
                     {this.props.store.wineList.wineList.map((wine) => {
-                        return <div className="editWineDisplay" key={wine.id}>
+                        return <div className="wineDisplay" key={wine.id}>
                             <h1>Edit Wine</h1>
                             <Row>
                                 <Col>

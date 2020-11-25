@@ -121,4 +121,12 @@ input {
   margin-bottom: 10px;
 }
 
+.wineDisplay{
+  border-radius: 25px;
+  color: rgb(85, 25, 33);
+  background: rgb(0, 0, 0, 0.1); 
+  margin: 20px;
+  padding: 20px;
+}
+
 
