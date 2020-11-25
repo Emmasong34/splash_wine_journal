@@ -2,10 +2,8 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
-
+//gets the data from the "wine" table to display on the DOM
 router.get('/', (req, res) => {
-//where "wine"."user_id" =$1;  [req.user.id]
-  
   const queryText = `SELECT * FROM "wine" WHERE "wine"."user_id" = $1 ;`;
     pool.query(queryText, [req.user.id])
         .then( (result) => {
@@ -17,6 +15,7 @@ router.get('/', (req, res) => {
         });
 });
 
+//gets the data for a selected wine id from the "wine" table to display on the DOM
 router.get('/:id', (req, res) => {
   const queryText = `SELECT * FROM "wine" WHERE "wine"."id" = ${req.params.id};`
   pool.query(queryText)
@@ -28,9 +27,7 @@ router.get('/:id', (req, res) => {
   })
 })
 
-/**
- * POST route template
- */
+//client may add a wine to the "wine" table using this route, sanitized for security
 router.post('/', (req, res) => {
   const queryText = `INSERT INTO "wine" ("user_id", "winery", "variety", "name", "rating", "year", "price", 
                         "fruity", "floral", "nutty", "earthy", "herby", "spicy", "other", "overall", "notes")
@@ -50,6 +47,7 @@ router.post('/', (req, res) => {
       })        
 });
 
+//client may update fields previously entered into the "wine" table, sanitized for security
 router.put('/:id', (req, res) => {
   console.log('in PUT function', req.params.id);
   console.log(req.body);
@@ -71,8 +69,7 @@ router.put('/:id', (req, res) => {
     })
 })
 
-
-
+//client may delete a wine from the "wine" table, selected by wine id
 router.delete('/:id', (req, res) => {
     const queryText = `DELETE FROM "wine" WHERE "id" = $1`;
     pool.query(queryText, [req.params.id])
