@@ -132,4 +132,14 @@ input {
   padding: 20px;
 }
 
+input{
+  background: rgb(85, 25, 33, .1);
+  outline: none;
+}
+
+#dropdown-menu{
+  width: 237px;
+  background: rgb(85, 25, 33, .1);
+  outline: none;
+}
 

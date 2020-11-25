@@ -138,7 +138,7 @@ class EditWine extends Component {
                                     <div className="editFruity">
                                         fruity: 
                                             <br></br>
-                                                <select name="editFruity" id="editFruity"
+                                                <select name="editFruity" id="dropdown-menu"
                                                 onChange={(event) => this.handleChange('fruity', event)} >
                                                     <option defaultValue={wine.fruity} >{wine.fruity}</option>
                                                     <option value="none">none</option>
@@ -158,7 +158,7 @@ class EditWine extends Component {
                                     <div className="editFloral">
                                         floral: 
                                             <br></br>
-                                                <select name="editFloral" id="editFloral"
+                                                <select name="editFloral" id="dropdown-menu"
                                                 onChange={(event) => this.handleChange('floral', event)}>
                                                     <option defaultValue={wine.floral}>{wine.floral}</option>
                                                     <option value="none">none</option>
@@ -177,7 +177,7 @@ class EditWine extends Component {
                                     <div className="editNutty">
                                         nutty: 
                                             <br></br>
-                                            <select name="editNutty" id="editNutty" 
+                                            <select name="editNutty" id="dropdown-menu" 
                                                 onChange={(event) => this.handleChange('nutty', event)}>
                                                 <option defaultValue={wine.nutty}>{wine.nutty}</option>
                                                 <option value="none">none</option>
@@ -193,7 +193,7 @@ class EditWine extends Component {
                                     <div className="editEarthy">
                                         earthy: 
                                             <br></br>
-                                                <select name="editEarthy" id="editEarthy"
+                                                <select name="editEarthy" id="dropdown-menu"
                                                     onChange={(event) => this.handleChange('earthy', event)}>
                                                         <option defaultValue={wine.earthy}>{wine.earthy}</option>
                                                         <option value="none">none</option>
@@ -207,7 +207,7 @@ class EditWine extends Component {
                                     <div className="editHerby">
                                         herby: 
                                             <br></br>
-                                                <select name="editHerby" id="editHerby"
+                                                <select name="editHerby" id="dropdown-menu"
                                                     onChange={(event) => this.handleChange('herby', event)}>
                                                         <option defaultValue={wine.herby}>{wine.herby}</option>
                                                         <option value="none">none</option>
@@ -222,7 +222,7 @@ class EditWine extends Component {
                                     <div className="editSpicy">
                                         spicy: 
                                             <br></br>
-                                                <select name="editSpicy" id="editSpicy"
+                                                <select name="editSpicy" id="dropdown-menu"
                                                     onChange={(event) => this.handleChange('spicy', event)}>
                                                         <option defaultValue={wine.spicy}>{wine.spicy}</option>
                                                         <option value="none">none</option>
@@ -239,7 +239,7 @@ class EditWine extends Component {
                                     <div className="editOther">
                                         other: 
                                             <br></br>
-                                                <select name="editOther" id="editOther"
+                                                <select name="editOther" id="dropdown-menu"
                                                     onChange={(event) => this.handleChange('other', event)}>
                                                         <option defaultValue={wine.other}>{wine.other}</option>
                                                         <option value="none">none</option>
@@ -257,7 +257,7 @@ class EditWine extends Component {
                                     <div className="editOverall">
                                         overall: 
                                             <br></br>
-                                                <select name="editOverall" id="editOverall"
+                                                <select name="editOverall" id="dropdown-menu"
                                                     onChange={(event) => this.handleChange('overall', event)}>
                                                         <option defaultValue={wine.overall}>{wine.overall}</option>
                                                         <option value="none">none</option>
