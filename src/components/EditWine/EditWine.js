@@ -29,7 +29,9 @@ class EditWine extends Component {
         }
     }
 
-
+    backToWineList = () => {
+        this.props.history.push('/user');
+    }
     
 
     handleChange = (typeOfKey, event) => {
@@ -280,7 +282,7 @@ class EditWine extends Component {
                                 </Col>
                             </Row>
                 
-                    <button>home</button>     <button onClick={this.editWine}>save</button>            
+                    <button onClick={this.backToWineList}>home</button>     <button onClick={this.editWine}>save</button>            
                     </div>
                     })}
                </Container> 

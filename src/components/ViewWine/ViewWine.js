@@ -24,6 +24,11 @@ class ViewWine extends Component {
 
       deleteWine = (id) => {
           this.props.dispatch({type: 'DELETE_WINE', payload: id});
+          this.props.history.push('/user');
+      }
+
+      backToWineList = () => {
+          this.props.history.push('/user');
       }
 
   
@@ -103,7 +108,7 @@ class ViewWine extends Component {
                             </Row>
                         </Container>    
              
-                <button>home</button>               <button onClick={() => this.editWine(wine.id)}>edit</button> <button onClick={() => this.deleteWine(wine.id)}>delete</button> 
+                <button onClick={this.backToWineList}>home</button>               <button onClick={() => this.editWine(wine.id)}>edit</button> <button onClick={() => this.deleteWine(wine.id)}>delete</button> 
                 </div>
                 })}
 

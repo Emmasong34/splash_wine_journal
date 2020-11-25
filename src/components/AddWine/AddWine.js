@@ -35,9 +35,12 @@ class AddWine extends Component {
     saveWine = () => {
         console.log(this.state.newWine);
         this.props.dispatch({type: 'ADD_WINE', payload: this.state})
+        this.props.history.push('/user');
     }
 
-
+    backToWineList = () => {
+        this.props.history.push('/user');
+    }
 
     handleChange = (typeOfKey, event) => {
         event.preventDefault();
@@ -262,7 +265,7 @@ class AddWine extends Component {
                 </Row>
 
             </Container>
-            <button onClick={this.saveWine}>save</button>
+            <button onClick={this.backToWineList}>home</button>   <button onClick={this.saveWine}>save</button>
             </form>
             </>
         )
