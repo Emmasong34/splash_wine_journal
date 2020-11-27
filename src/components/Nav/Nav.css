@@ -1,12 +1,12 @@
-.jumbotron{
+/* .jumbotron{ */
   /* background-color: rgb(85, 25, 33); */
   /* color: #f2f2f2; */
-  color: rgb(85, 25, 33);
+  /* color: rgb(85, 25, 33);
   margin: 0px;
-  padding: 0px;
-  background-image: url(https://m.media-amazon.com/images/I/81-h3p9-DiL._AC_SS350_.jpg);
+  padding: 0px; */
+  /* background-image: url(https://m.media-amazon.com/images/I/81-h3p9-DiL._AC_SS350_.jpg); */
   /* background-image: url(https://vintageview.com/wp-content/uploads/2018/08/Red-Wine-Glass-Of-Wine-Glass-Drink-Beverage-2807553.jpg); */
-}
+/* } */
 
 .nav-title {
     font-size: 24px;

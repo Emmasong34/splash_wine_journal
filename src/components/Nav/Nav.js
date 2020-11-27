@@ -18,7 +18,7 @@ const Nav = (props) => {
   }
 
   return (
-    <Jumbotron fluid className="jumbotron">
+    // <Jumbotron fluid className="jumbotron">
     <div className="nav">
       <Link to="/home">
         <h2 className="nav-title">Splash Wine Journal</h2>
@@ -45,7 +45,7 @@ const Nav = (props) => {
         </Link>
       </div>
     </div>
-    </Jumbotron>
+    
   );
   
 };
