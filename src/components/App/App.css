@@ -5,7 +5,8 @@ body,
 }
 
 body {
-  font-family: 'Barlow';font-size: 22px;
+  /* font-family: 'Barlow';font-size: 22px; */
+  font-family: 'Cinzel', serif; font-size: 30px;
   text-align: center;
   /* background: url(https://t4.ftcdn.net/jpg/02/29/23/91/360_F_229239192_KipmCaOAh4QZzS73KOIVoi75eGQAUECf.jpg) no-repeat center center fixed; */
   /* url(https://images.assetsdelivery.com/compings_v2/jagcz/jagcz1208/jagcz120800186.jpg); */
@@ -135,11 +136,14 @@ input {
 input{
   background: rgb(85, 25, 33, .1);
   outline: none;
+  margin: 15px;
 }
 
 #dropdown-menu{
   width: 237px;
   background: rgb(85, 25, 33, .1);
   outline: none;
+  margin: 15px;
 }
+
 

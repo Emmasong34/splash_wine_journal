@@ -65,6 +65,7 @@ class EditWine extends Component {
             notes: this.state.editWine.notes
         }
         this.props.dispatch({type: 'EDIT_WINE', payload: wine});
+        this.props.history.push('/user');
     }
 
 
