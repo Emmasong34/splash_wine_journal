@@ -72,7 +72,7 @@ class EditWine extends Component {
     render(){
         return (
             
-            <div>
+            <div >
                 
                 <Container>
                 {/* {JSON.stringify(this.props.store.wineList.wineList[0])};  */}

@@ -217,7 +217,7 @@ class AddWine extends Component {
                 </Row>
 
                 <Row>
-                    <Col sm={4}>
+                    <Col >
                         <div className="addOther">
                             other: 
                             <br></br>
@@ -235,7 +235,7 @@ class AddWine extends Component {
                         </div>
                     </Col>
 
-                    <Col sm={4}>
+                    <Col >
                         <div className="addOverall">
                             overall: 
                                 <br></br>
@@ -253,8 +253,10 @@ class AddWine extends Component {
                                     </select>
                         </div>
                     </Col>
-
-                    <Col sm={4}>
+                    </Row>
+                    <Row>
+                    <Col >
+                    
                         <div className="notesInput">
                             <label className="addNotes">notes:</label>
                                 <br></br>
@@ -262,6 +264,7 @@ class AddWine extends Component {
                                     onChange={(event) => this.handleChange('notes', event)}></input>
                         </div>
                     </Col>
+                    
                 </Row>
 
             </Container>
