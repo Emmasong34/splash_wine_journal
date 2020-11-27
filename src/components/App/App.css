@@ -50,6 +50,7 @@ Button
   cursor: pointer;
 }
 
+
 .btn_sizeMin {
   min-height: 50px;
   min-width: 100px;
@@ -147,4 +148,14 @@ input{
   margin: 15px;
 }
 
+button{
+  font-size: 20px;
+}
 
+.wineList{
+  padding: 20px;
+}
+
+h1{
+  font-size: 60px;
+}

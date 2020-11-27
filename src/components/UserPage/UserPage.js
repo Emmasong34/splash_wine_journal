@@ -39,7 +39,7 @@ class UserPage extends Component {
         {/* {JSON.stringify(this.props.store.wineList)} */}
 
         {this.props.store.wineList.wineList.map((wine) => {
-          return <div  key={wine.id}>
+          return <div className="wineList" key={wine.id}>
                     <p>winery: {wine.winery}, variety: {wine.variety}, 
                     name: {wine.name}, rating: {wine.rating}</p>
                     <button className="viewDetails" key={wine.id} onClick={() => {this.handleClick(wine)}}>view wine</button>
