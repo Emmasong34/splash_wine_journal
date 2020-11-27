@@ -38,17 +38,17 @@ class ViewWine extends Component {
     render(){
         return (
             
-            <div >
+            <div className="wineDisplay">
             
             {/* JSON stringify is for testing purposes */}
             {/* {JSON.stringify(this.props.store.wineList)}; */}
             
                 {/* {this.props.wineList.wine.id} */}
                 {this.props.store.wineList.wineList.map((wine) => {
-                    return <div className="wineDisplay" key={wine.id}>
+                    return <div  key={wine.id}>
                         <h1>Details for {wine.name}</h1>
-                        <Container>
-                            <Row>
+                        <Container className="displayContainer">
+                            <Row >
                                 <Col>
                                     winery: {wine.winery} 
                                 </Col>

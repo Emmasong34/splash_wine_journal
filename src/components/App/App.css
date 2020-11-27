@@ -125,7 +125,8 @@ input {
 
 .wineDisplay{
   border-radius: 25px;
-  color: rgb(104, 18, 15);
+  color: rgb(133, 38, 64);
+  /* color: rgb(104, 18, 15); */
   /* color: rgb(85, 25, 33); */
   /* background: rgb(85, 25, 33, .2); */
   background: rgb(238, 230, 164, .3);
@@ -136,20 +137,21 @@ input {
 }
 
 input{
-  background: rgb(85, 25, 33, .1);
+  background: rgb(133, 38, 64, .2);
   outline: none;
   margin: 15px;
 }
 
 #dropdown-menu{
   width: 237px;
-  background: rgb(85, 25, 33, .1);
+  background: rgb(133, 38, 64, .2);
   outline: none;
   margin: 15px;
 }
 
 button{
   font-size: 20px;
+  background: rgb(133, 38, 64, .3);
 }
 
 .wineList{
@@ -158,4 +160,14 @@ button{
 
 h1{
   font-size: 60px;
+}
+
+.displayContainer{
+  background: rgb(255, 255, 255, .3);
+  padding: 20px;
+  text-align: inherit;
+}
+
+ul{
+  list-style-type: none;
 }
