@@ -11,21 +11,21 @@ class EditWine extends Component {
 
     state = {
         editWine: {
-            winery: '',
-            variety: '',
-            name: '',
-            rating: '',
-            year: '',
-            price: '',
-            fruity: '',
-            floral: '',
-            nutty: '',
-            earthy: '',
-            herby: '',
-            spicy: '',
-            other: '',
-            overall: '',
-            notes: ''
+            winery: this.props.store.wineList.wineList[0].winery,
+            variety: this.props.store.wineList.wineList[0].variety,
+            name: this.props.store.wineList.wineList[0].name,
+            rating: this.props.store.wineList.wineList[0].rating,
+            year: this.props.store.wineList.wineList[0].year,
+            price: this.props.store.wineList.wineList[0].price,
+            fruity: this.props.store.wineList.wineList[0].fruity,
+            floral: this.props.store.wineList.wineList[0].floral,
+            nutty: this.props.store.wineList.wineList[0].nutty,
+            earthy: this.props.store.wineList.wineList[0].earthy,
+            herby: this.props.store.wineList.wineList[0].herby,
+            spicy: this.props.store.wineList.wineList[0].spicy,
+            other: this.props.store.wineList.wineList[0].other,
+            overall: this.props.store.wineList.wineList[0].overall,
+            notes: this.props.store.wineList.wineList[0].notes
         }
     }
 
