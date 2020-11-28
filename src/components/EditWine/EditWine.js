@@ -284,7 +284,7 @@ class EditWine extends Component {
                                 </Col>
                             </Row>
                 
-                    <button onClick={this.backToWineList}>home</button>     <button onClick={this.editWine}>save</button>            
+                            <button onClick={this.backToWineList}>home</button> <button onClick={this.editWine}>save</button>            
                     </div>
                     })}
                </Container> 

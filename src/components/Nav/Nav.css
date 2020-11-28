@@ -44,6 +44,7 @@
 .nav-link:hover {
   /* background-color: rgb(245, 242, 184); */
   background-color: rgb(85, 25, 33);
+  color: rgb(238, 230, 164);
 }
 
 .nav-right {

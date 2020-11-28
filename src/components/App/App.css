@@ -43,8 +43,10 @@ Button
   border-color: #014041;
   border-width: 1px 1px 3px;
   border-radius: 4px;
-  background-color: #00acb0;
-  color: #f8f8f8;
+  /* background-color: #00acb0; */
+  /* color: #f8f8f8; */
+  font-size: 20px;
+  background: rgb(133, 38, 64, .5);
   font-size: 1.1rem;
   outline: 0;
   cursor: pointer;
@@ -67,7 +69,8 @@ Button
 }
 
 .btn:hover {
-  background-color: #008183;
+  /* background-color: #008183; */
+  background-color: rgb(133, 38, 64);
   text-decoration: none;
 }
 
@@ -79,13 +82,17 @@ Button
   border-radius: 0;
   background: none;
   font: inherit;
-  color: #444;
+  color: rgb(133, 38, 64);
+  /* color: #444; */
 }
 
 .btn_asLink:hover {
+
   background-color: transparent;
-  border-color: #008183;
-  color: #008183;
+  /* border-color: #008183; */
+  border-color: rgb(133, 38, 64);
+  /* color: #008183; */
+  color: rgb(133, 38, 64);
 }
 
 /* --------------------------------------------------------------------------------
@@ -108,15 +115,17 @@ Form Treatment
 -------------------------------------------------------------------------------- */
 
 .formPanel {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  text-align: center;
   width: 400px;
   max-width: 100%;
   padding: 25px;
   margin: 0 auto 20px;
-  background-color: #efefef;
+  /* background-color: #efefef; */
   border-radius: 3px;
-  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
+  /* box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4); */
 }
+
 
 input {
   margin: 5px;
@@ -129,7 +138,7 @@ input {
   /* color: rgb(104, 18, 15); */
   /* color: rgb(85, 25, 33); */
   /* background: rgb(85, 25, 33, .2); */
-  background: rgb(238, 230, 164, .3);
+  background: rgb(238, 230, 164, .2);
   /* color: rgb(245, 242, 184); */
   /* background: rgb(0, 0, 0, 0.1);  */
   margin: 20px;
@@ -152,6 +161,11 @@ input{
 button{
   font-size: 20px;
   background: rgb(133, 38, 64, .3);
+}
+
+button:hover{
+  background-color: rgb(85, 25, 33);
+  color: rgb(238, 230, 164);
 }
 
 .wineList{
