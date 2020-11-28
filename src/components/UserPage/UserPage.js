@@ -43,8 +43,8 @@ class UserPage extends Component {
                     <li>winery: {wine.winery}</li>
                     <li>variety: {wine.variety}</li>
                     <li>name: {wine.name}</li>
-                   <li> rating: {wine.rating}</li>
-                    <button className="viewDetails" key={wine.id} onClick={() => {this.handleClick(wine)}}>view wine</button>
+                    <li> rating: {wine.rating}</li>
+                    <button className="viewDetails" key={wine.id} onClick={() => {this.handleClick(wine)}}>details</button>
                 </ul>
         })}
 

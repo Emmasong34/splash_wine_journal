@@ -137,12 +137,9 @@ input {
   border-radius: 25px;
   color: rgb(133, 38, 64);
   text-shadow:1px 1px white;
-  /* color: rgb(104, 18, 15); */
-  /* color: rgb(85, 25, 33); */
-  /* background: rgb(85, 25, 33, .2); */
+
   background: rgb(238, 230, 164, .2);
-  /* color: rgb(245, 242, 184); */
-  /* background: rgb(0, 0, 0, 0.1);  */
+
   margin: 20px;
   padding: 20px;
 }
@@ -182,12 +179,13 @@ h1{
 .displayContainer{
   background: rgb(255, 255, 255, .3);
   padding: 20px;
-  text-align: inherit;
+  
 }
 
 ul{
   list-style-type: none;
-  text-align: left;
+  border: 2px solid rgb(133, 38, 64);
+  margin: 10px;
 }
 
 .wineListHeader{
