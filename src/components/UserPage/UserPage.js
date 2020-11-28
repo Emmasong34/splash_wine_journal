@@ -31,7 +31,7 @@ class UserPage extends Component {
   render() {
     return (
       <div className="wineDisplay">
-        <h1>Wine List</h1>
+        <h1 className="wineListHeader">Wine List</h1>
         <button onClick={this.addWine}>add wine</button>
         {/* <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1> */}
         {/* <p>Your ID is: {this.props.store.user.id}</p> */}
@@ -43,7 +43,7 @@ class UserPage extends Component {
                     <li>winery: {wine.winery}</li>
                     <li>variety: {wine.variety}</li>
                     <li>name: {wine.name}</li>
-                    <li>rating: {wine.rating}</li>
+                   <li> rating: {wine.rating}</li>
                     <button className="viewDetails" key={wine.id} onClick={() => {this.handleClick(wine)}}>view wine</button>
                 </ul>
         })}

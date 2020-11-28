@@ -7,6 +7,7 @@ body,
 body {
   /* font-family: 'Barlow';font-size: 22px; */
   font-family: 'Cinzel', serif; font-size: 30px;
+ 
   text-align: center;
   /* background: url(https://t4.ftcdn.net/jpg/02/29/23/91/360_F_229239192_KipmCaOAh4QZzS73KOIVoi75eGQAUECf.jpg) no-repeat center center fixed; */
   /* url(https://images.assetsdelivery.com/compings_v2/jagcz/jagcz1208/jagcz120800186.jpg); */
@@ -135,6 +136,7 @@ input {
 .wineDisplay{
   border-radius: 25px;
   color: rgb(133, 38, 64);
+  text-shadow:1px 1px white;
   /* color: rgb(104, 18, 15); */
   /* color: rgb(85, 25, 33); */
   /* background: rgb(85, 25, 33, .2); */
@@ -174,6 +176,7 @@ button:hover{
 
 h1{
   font-size: 60px;
+  /* text-shadow:2px 2px white; */
 }
 
 .displayContainer{
@@ -184,4 +187,17 @@ h1{
 
 ul{
   list-style-type: none;
+  text-align: left;
+}
+
+.wineListHeader{
+    margin-left: 422px;
+    width: 275px;
+    height: 275px;
+    line-height: 275px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    background: rgb(133, 38, 64);
 }
