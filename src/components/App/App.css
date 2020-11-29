@@ -163,6 +163,7 @@ button{
   font-size: 15px;
   background: rgb(133, 38, 64, .3);
   width: 100px;
+  padding: 3px;
 }
 
 button:hover{

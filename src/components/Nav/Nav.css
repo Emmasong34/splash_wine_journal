@@ -49,4 +49,19 @@
 
 .nav-right {
   float: right;
+  align-items: baseline;
+}
+
+.logOutButton{
+
+  color: rgb(85, 25, 33);
+  /* these last two make the logout button in
+  the nav bar look like another link */
+  border: none;
+  cursor: pointer;
+  outline:0;
+  background-color: white;
+  display: inline;
+  align-items: flex-end;
+ 
 }
