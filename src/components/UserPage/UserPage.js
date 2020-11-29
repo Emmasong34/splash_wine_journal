@@ -33,13 +33,11 @@ class UserPage extends Component {
       <div className="wineDisplay">
         <h1 className="wineListHeader">Wine List</h1>
         <button onClick={this.addWine}>add wine</button>
-        {/* <h1 id="welcome">Welcome, {this.props.store.user.username}!</h1> */}
-        {/* <p>Your ID is: {this.props.store.user.id}</p> */}
 
         {/* {JSON.stringify(this.props.store.wineList)} */}
 
         {this.props.store.wineList.wineList.map((wine) => {
-          return <ul className="displayContainer" key={wine.id}>
+          return <ul className="userDisplayContainer" key={wine.id}>
                     <li>winery: {wine.winery}</li>
                     <li>variety: {wine.variety}</li>
                     <li>name: {wine.name}</li>

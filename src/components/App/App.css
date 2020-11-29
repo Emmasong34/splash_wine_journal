@@ -41,7 +41,7 @@ Button
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  border-color: #014041;
+  /* border-color: #014041; */
   border-width: 1px 1px 3px;
   border-radius: 4px;
   /* background-color: #00acb0; */
@@ -137,8 +137,8 @@ input {
   border-radius: 25px;
   color: rgb(133, 38, 64);
   text-shadow:1px 1px white;
-
-  background: rgb(238, 230, 164, .2);
+  background: rgb(211, 211, 211, .4);
+  /* background: rgb(238, 230, 164, .2); */
 
   margin: 20px;
   padding: 20px;
@@ -158,7 +158,7 @@ input{
 }
 
 button{
-  font-size: 20px;
+  font-size: 15px;
   background: rgb(133, 38, 64, .3);
 }
 
@@ -177,7 +177,7 @@ h1{
 }
 
 .displayContainer{
-  background: rgb(255, 255, 255, .3);
+  /* background: rgb(255, 255, 255, .3); */
   padding: 20px;
   
 }
@@ -186,16 +186,29 @@ ul{
   list-style-type: none;
   border: 2px solid rgb(133, 38, 64);
   margin: 10px;
+  /* flex-direction: row; */
+  /* width: 500px; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
 }
 
 .wineListHeader{
-    margin-left: 422px;
-    width: 275px;
-    height: 275px;
-    line-height: 275px;
+  margin: 0 auto;
+    /* margin-left: 465px; */
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
     background: rgb(133, 38, 64);
 }
+
+/* .userDisplayContainer{
+  margin: 10px;
+  flex-direction: row;
+  width: 450px;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
