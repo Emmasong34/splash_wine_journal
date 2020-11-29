@@ -30,8 +30,10 @@ class UserPage extends Component {
   // this component doesn't do much to start, just renders some user info to the DOM
   render() {
     return (
+      <>
+      <h1 className="wineListHeader">Wine List</h1>
       <div className="wineDisplay">
-        <h1 className="wineListHeader">Wine List</h1>
+        
         <button onClick={this.addWine}>add wine</button>
         <br></br>
 
@@ -49,6 +51,7 @@ class UserPage extends Component {
 
         {/* <LogOutButton className="log-in" /> */}
       </div>
+      </>
     );
   }
 }

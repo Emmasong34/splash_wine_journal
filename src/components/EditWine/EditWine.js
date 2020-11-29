@@ -74,12 +74,13 @@ class EditWine extends Component {
         return (
             
             <div >
-                
+                <h1 className="editWineHeader">Edit Wine</h1>
                 <Container>
+                
                 {/* {JSON.stringify(this.props.store.wineList.wineList[0])};  */}
                     {this.props.store.wineList.wineList.map((wine) => {
                         return <div className="wineDisplay" key={wine.id}>
-                            <h1>Edit Wine</h1>
+                            
                             <Row>
                                 <Col>
                                     <div className="editWineryInput">

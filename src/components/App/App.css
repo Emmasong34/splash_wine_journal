@@ -174,10 +174,10 @@ button:hover{
   padding: 20px;
 }
 
-h1{
+/* h1{
   font-size: 60px;
   /* text-shadow:2px 2px white; */
-}
+/* } */ 
 
 .displayContainer{
   /* background: rgb(255, 255, 255, .3); */
@@ -211,6 +211,32 @@ ul{
     color: #fff;
     text-align: center;
     background: rgb(133, 38, 64);
+}
+
+.editWineHeader{
+  margin: 0 auto;
+  /* margin-left: 465px; */
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  background: rgb(133, 38, 64);
+}
+
+.addWineHeader{
+  margin: 0 auto;
+  /* margin-left: 465px; */
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  background: rgb(133, 38, 64);
 }
 
 /* .userDisplayContainer{
