@@ -181,8 +181,8 @@ h1{
 
 .displayContainer{
   /* background: rgb(255, 255, 255, .3); */
-  padding: 20px;
-  
+  padding: 40px;
+  margin: 20px;
 }
 
 ul{
@@ -216,3 +216,7 @@ ul{
 /* .userDisplayContainer{
   box-shadow: 100px, 100px, black;
 } */
+
+.row{
+  padding: 15px;
+}

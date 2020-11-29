@@ -50,27 +50,39 @@ class ViewWine extends Component {
                         <Container className="displayContainer">
                             <Row >
                                 <Col>
-                                    winery: {wine.winery} 
+                                    winery: 
+                                    <br></br>
+                                    {wine.winery} 
                                 </Col>
                                 <Col>
-                                    variety: {wine.variety}
+                                    variety: 
+                                    <br></br>
+                                    {wine.variety}
                                 </Col>
                               
                             </Row>
                             <Row>
                                 <Col>
-                                    name: {wine.name} 
+                                    name: 
+                                    <br></br>
+                                    {wine.name} 
                                 </Col>
                                 <Col>
-                                    rating: {wine.rating} 
+                                    rating: 
+                                    <br></br>
+                                    {wine.rating} 
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    year: {wine.year} 
+                                    year: 
+                                    <br></br>
+                                    {wine.year} 
                                 </Col>
                                 <Col>
-                                    price: {wine.price}
+                                    price: 
+                                    <br></br>
+                                    {wine.price}
                                 </Col>
                             </Row> 
                             <Row>
@@ -102,8 +114,12 @@ class ViewWine extends Component {
                                 <Col>
                                     overall: {wine.overall} 
                                 </Col>
+                            </Row>
+                            <Row>
                                 <Col>
-                                    notes: {wine.notes}
+                                    notes: 
+                                    <br></br>
+                                    {wine.notes}
                                 </Col>
                             </Row>
                         </Container>    
