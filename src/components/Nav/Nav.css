@@ -50,6 +50,7 @@
 .nav-right {
   float: right;
   align-items: baseline;
+  display: flex;
 }
 
 .logOutButton{
