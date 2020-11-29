@@ -4,6 +4,8 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import swal from '@sweetalert/with-react';
+
 import './ViewWine.css';
 
 
@@ -31,8 +33,21 @@ class ViewWine extends Component {
           this.props.history.push('/user');
       }
 
-  
 
+      deleteThisWine(id) {
+          console.log('deletethiswine clicked', id)
+        swal({
+            title: "Are you sure?",
+            // text: "Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then(() => {this.deleteWine(id)}
+          
+          
+          )}
+  
 
 
     render(){
@@ -123,8 +138,11 @@ class ViewWine extends Component {
                                 </Col>
                             </Row>
                         </Container>    
-             
-                <button onClick={this.backToWineList}>home</button>               <button onClick={() => this.editWine(wine.id)}>edit</button> <button onClick={() => this.deleteWine(wine.id)}>delete</button> 
+                
+                        <button onClick={this.backToWineList}>home</button>               <button onClick={() => this.editWine(wine.id)}>edit</button> <button onClick={() => this.deleteThisWine(wine.id)}>delete</button> 
+                        
+                    
+
                 </div>
                 })}
 
