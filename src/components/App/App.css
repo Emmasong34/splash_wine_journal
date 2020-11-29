@@ -137,7 +137,9 @@ input {
   border-radius: 25px;
   color: rgb(133, 38, 64);
   text-shadow:1px 1px white;
-  background: rgb(211, 211, 211, .4);
+  background: rgb(255, 255, 255, .4);
+  
+  /* background: rgb(211, 211, 211, .35); */
   /* background: rgb(238, 230, 164, .2); */
 
   margin: 20px;
@@ -192,8 +194,10 @@ ul{
   width: 500px;
   padding: 15px;
   height: 315px;
+  align-content: flex-start;
   /* flex-wrap: wrap; */
   justify-content: space-around;
+  
 }
 
 .wineListHeader{
@@ -210,9 +214,5 @@ ul{
 }
 
 /* .userDisplayContainer{
-  margin: 10px;
-  flex-direction: row;
-  width: 450px;
-  flex-wrap: wrap;
-  justify-content: center;
+  box-shadow: 100px, 100px, black;
 } */

@@ -92,7 +92,7 @@ class AddWine extends Component {
                         <div className="ratingInput">
                             <label className="addRating">rating:</label>
                                 <br></br>
-                                    <input type="text" id="addWineRating" placeholder="rating 1-5"
+                                    <input type="text" min="1" max="5" id="addWineRating" placeholder="rating 1-5"
                                     onChange={(event) => this.handleChange('rating', event)}></input>
                         </div>
                     </Col>
