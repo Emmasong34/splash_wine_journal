@@ -33,6 +33,7 @@ class UserPage extends Component {
       <div className="wineDisplay">
         <h1 className="wineListHeader">Wine List</h1>
         <button onClick={this.addWine}>add wine</button>
+        <br></br>
 
         {/* {JSON.stringify(this.props.store.wineList)} */}
 

@@ -160,6 +160,7 @@ input{
 button{
   font-size: 15px;
   background: rgb(133, 38, 64, .3);
+  width: 100px;
 }
 
 button:hover{
@@ -186,10 +187,13 @@ ul{
   list-style-type: none;
   border: 2px solid rgb(133, 38, 64);
   margin: 10px;
-  /* flex-direction: row; */
-  /* width: 500px; */
+  display: inline-flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 15px;
+  height: 315px;
   /* flex-wrap: wrap; */
-  /* justify-content: center; */
+  justify-content: space-around;
 }
 
 .wineListHeader{
