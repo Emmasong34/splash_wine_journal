@@ -71,7 +71,8 @@ router.put('/:id', (req, res) => {
 
 //client may delete a wine from the "wine" table, selected by wine id
 router.delete('/:id', (req, res) => {
-    const queryText = `DELETE FROM "wine" WHERE "id" = $1`;
+  if(req.isAuthenticated()) {
+  const queryText = `DELETE FROM "wine" WHERE "id" = $1`;
     pool.query(queryText, [req.params.id])
     .then((result) => {
       res.sendStatus(200);
@@ -80,6 +81,9 @@ router.delete('/:id', (req, res) => {
       console.log('error on delete from server', error);
       res.sendStatus(500);
     })
+  }else {
+    alert ("not authorized to delete")
+  }
 })
 
 
