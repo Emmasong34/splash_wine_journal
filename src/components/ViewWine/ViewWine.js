@@ -63,76 +63,76 @@ class ViewWine extends Component {
                     return <div  key={wine.id}>
                         <h1>Details for {wine.name}</h1>
                         <Container className="displayContainer">
-                            <Row >
+                            <Row className="displayRow">
                                 <Col>
-                                    winery: 
+                                    <u>winery:</u>
                                     <br></br>
                                     {wine.winery} 
                                 </Col>
                                 <Col>
-                                    variety: 
+                                    <u>variety:</u>
                                     <br></br>
                                     {wine.variety}
                                 </Col>
                               
                             </Row>
-                            <Row>
+                            <Row className="displayRow">
                                 <Col>
-                                    name: 
+                                    <u>name:</u>
                                     <br></br>
                                     {wine.name} 
                                 </Col>
                                 <Col>
-                                    rating: 
+                                    <u>rating:</u> 
                                     <br></br>
                                     {wine.rating} 
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="displayRow">
                                 <Col>
-                                    year: 
+                                   <u>year:</u>  
                                     <br></br>
                                     {wine.year} 
                                 </Col>
                                 <Col>
-                                    price: 
+                                   <u>price:</u>  
                                     <br></br>
                                     {wine.price}
                                 </Col>
                             </Row> 
-                            <Row>
+                            <Row className="displayRow">
                                 <Col>
-                                    fruity: {wine.fruity}
+                                    <u>fruity:</u> {wine.fruity}
                                 </Col>
                                 <Col>
-                                    floral: {wine.floral} 
+                                    <u>floral:</u> {wine.floral} 
                                 </Col>
                                 <Col>
-                                    nutty: {wine.nutty} 
+                                    <u>nutty:</u> {wine.nutty} 
                                 </Col>
                             </Row>
-                            <Row> 
+                            <Row className="displayRow"> 
                                 <Col>
-                                    earthy: {wine.earthy} 
+                                    <u>earthy:</u> {wine.earthy} 
                                 </Col>
                                 <Col>
-                                    herby: {wine.herby} 
+                                    <u>herby:</u> {wine.herby} 
                                 </Col>
                                 <Col>
-                                    spicy: {wine.spicy} 
+                                    <u>spicy:</u> {wine.spicy} 
                                 </Col>
                             </Row>  
-                            <Row>
+                            <Row className="displayRow">
                                 <Col>
-                                    other: {wine.other} 
+                                    <u>other:</u> {wine.other} 
                                 </Col>
                                 <Col>
-                                    overall: {wine.overall} 
+                                    <u>overall:</u> {wine.overall} 
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="displayRow">
                                 <Col>
-                                    notes: 
+                                    <u>notes:</u> 
                                     <br></br>
                                     {wine.notes}
                                 </Col>
