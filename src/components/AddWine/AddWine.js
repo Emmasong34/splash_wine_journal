@@ -123,6 +123,7 @@ class AddWine extends Component {
                                 <br></br>
                                     <select name="selectFruity" id="dropdown-menu"
                                         onChange={(event) => this.handleChange('fruity', event)} >
+                                            <option>select</option>
                                             <option value="none" >none</option>
                                             <option value="berry" >berry</option>
                                             <option value="cherry" >cherry</option>
@@ -143,6 +144,7 @@ class AddWine extends Component {
                                 <br></br> 
                                     <select name="selectFloral" id="dropdown-menu"
                                         onChange={(event) => this.handleChange('floral', event)}>
+                                            <option>select</option>
                                             <option value="none">none</option>
                                             <option value="rose">rose</option>
                                             <option value="violet">violet</option>
@@ -162,6 +164,7 @@ class AddWine extends Component {
                                 <br></br>
                                     <select name="selectNutty" id="dropdown-menu"
                                         onChange={(event) => this.handleChange('nutty', event)}>
+                                            <option>select</option>
                                             <option value="none">none</option>
                                             <option value="almond">almond</option>
                                             <option value="hazelnut">hazelnut</option>
@@ -178,6 +181,7 @@ class AddWine extends Component {
                             <br></br>
                                 <select name="selectEarthy" id="dropdown-menu"
                                     onChange={(event) => this.handleChange('earthy', event)}>
+                                        <option>select</option>
                                         <option value="none">none</option>
                                         <option value="dry leaves">dry leaves</option>
                                         <option value="dusty">dusty</option>
@@ -192,6 +196,7 @@ class AddWine extends Component {
                                 <br></br> 
                                     <select name="selectHerby" id="dropdown-menu"
                                         onChange={(event) => this.handleChange('herby', event)}>
+                                            <option>select</option>
                                             <option value="none">none</option>
                                             <option value="hay">hay</option>
                                             <option value="mint">mint</option>
@@ -207,6 +212,7 @@ class AddWine extends Component {
                                 <br></br>
                                 <select name="selectSpicy" id="dropdown-menu"
                                     onChange={(event) => this.handleChange('spicy', event)}>
+                                        <option>select</option>
                                         <option value="none">none</option>
                                         <option value="black pepper">black pepper</option>
                                         <option value="licorice">licorice</option>
@@ -224,6 +230,7 @@ class AddWine extends Component {
                             <br></br>
                                 <select name="selectOther" id="dropdown-menu"
                                     onChange={(event) => this.handleChange('other', event)}>
+                                        <option>select</option>
                                         <option value="none">none</option>
                                         <option value="vanilla">vanilla</option>
                                         <option value="cedar">cedar</option>
@@ -242,6 +249,7 @@ class AddWine extends Component {
                                 <br></br>
                                     <select name="selectOverall" id="dropdown-menu"
                                         onChange={(event) => this.handleChange('overall', event)}>
+                                            <option>select</option>
                                             <option value="none">none</option>
                                             <option value="aggressive">aggressive</option>
                                             <option value="balanced">balanced</option>
