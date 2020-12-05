@@ -12,7 +12,6 @@ import Nav from '../Nav/Nav';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage';
-import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import ViewWine from '../ViewWine/ViewWine';
@@ -82,7 +81,8 @@ class App extends Component {
               // - else shows LandingPage at "/home"
               exact
               path="/home"
-              component={LandingPage}
+              // component={LandingPage}
+              component={RegisterPage}
               authRedirect="/user"
             />
 
