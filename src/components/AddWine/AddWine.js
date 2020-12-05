@@ -9,7 +9,7 @@ import './AddWine.css';
 
 class AddWine extends Component {
 
-
+//setting local state as empty strings so that the new information can populate it
     state = {
         newWine: {
             winery: '',
@@ -31,17 +31,19 @@ class AddWine extends Component {
     }
 
 
-
+//this sends the new state to the store
     saveWine = () => {
         console.log(this.state.newWine);
         this.props.dispatch({type: 'ADD_WINE', payload: this.state})
         this.props.history.push('/user');
     }
 
+//redirects user back to the wineList page without saving
     backToWineList = () => {
         this.props.history.push('/user');
     }
 
+//creates newWine    
     handleChange = (typeOfKey, event) => {
         event.preventDefault();
         this.setState({

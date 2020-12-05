@@ -4,11 +4,11 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './EditWine.css';
 
 
 class EditWine extends Component {
 
+//sets the local state to be the information that was previously added to the store
     state = {
         editWine: {
             winery: this.props.store.wineList.wineList[0].winery,
@@ -29,11 +29,12 @@ class EditWine extends Component {
         }
     }
 
+//redirects user back to the wineList page without saving
     backToWineList = () => {
         this.props.history.push('/user');
     }
     
-
+//sets new state
     handleChange = (typeOfKey, event) => {
         event.preventDefault();
         this.setState({
@@ -44,6 +45,7 @@ class EditWine extends Component {
         })
     }
 
+//updates wine in the store
     editWine = (event) => {
         console.log('this.state from edit wine:', this.props.store)
         let wine = {
@@ -76,7 +78,7 @@ class EditWine extends Component {
             <div >
                 <h1 className="editWineHeader">Edit Wine</h1>
                 <Container>
-                
+                {/* JSON stringify is for testing purposes */}
                 {/* {JSON.stringify(this.props.store.wineList.wineList[0])};  */}
                     {this.props.store.wineList.wineList.map((wine) => {
                         return <div className="wineDisplay" key={wine.id}>

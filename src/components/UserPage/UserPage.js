@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import LogOutButton from '../LogOutButton/LogOutButton';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import './UserPage.css';
 
@@ -10,10 +9,12 @@ class UserPage extends Component {
     this.getWineList();
   }
 
+//gets wineList from store  
   getWineList = () => {
     this.props.dispatch({type: 'FETCH_WINE_LIST'});
   }
 
+//displays information for selected wine by id  
   handleClick = (wineClicked) => {
     console.log('clicked');
     console.log('wineClicked', wineClicked.id);
@@ -21,13 +22,14 @@ class UserPage extends Component {
     this.props.history.push('/viewWine');
   }
 
+//redirects user to addwine page  
   addWine = () => {
     console.log('addWine clicked');
     this.props.history.push('/addWine');
   }
 
 
-  // this component doesn't do much to start, just renders some user info to the DOM
+  
   render() {
     return (
       <>
@@ -49,7 +51,6 @@ class UserPage extends Component {
                 </ul>
         })}
 
-        {/* <LogOutButton className="log-in" /> */}
       </div>
       </>
     );

@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import swal from '@sweetalert/with-react';
 
-import './ViewWine.css';
 
 
 class ViewWine extends Component {
@@ -19,21 +18,24 @@ class ViewWine extends Component {
         // this.props.dispatch({type: 'SET_WINE_LIST'});
       }
 
+    //retrieves information for selected wine
       editWine = (id) => {
         console.log('edit wine clicked, this is the id for wine selected', id)
         this.props.history.push('/editWine')
       }
-
+    
+    //bundles up information about which wine to delete by id
       deleteWine = (id) => {
           this.props.dispatch({type: 'DELETE_WINE', payload: id});
           this.props.history.push('/user');
       }
 
+    //redirects user back to winelist page without saving
       backToWineList = () => {
           this.props.history.push('/user');
       }
 
-
+    //deletes selected wine by id after warning
       deleteThisWine(id) {
           console.log('deletethiswine clicked', id)
         swal({
@@ -44,8 +46,6 @@ class ViewWine extends Component {
             dangerMode: true,
           })
           .then(() => {this.deleteWine(id)}
-          
-          
           )}
   
 
@@ -102,32 +102,48 @@ class ViewWine extends Component {
                             </Row> 
                             <Row className="displayRow">
                                 <Col>
-                                    <u>fruity:</u> {wine.fruity}
+                                    <u>fruity:</u> 
+                                    <br></br>
+                                    {wine.fruity}
                                 </Col>
                                 <Col>
-                                    <u>floral:</u> {wine.floral} 
+                                    <u>floral:</u> 
+                                    <br></br>
+                                    {wine.floral} 
                                 </Col>
                                 <Col>
-                                    <u>nutty:</u> {wine.nutty} 
+                                    <u>nutty:</u> 
+                                    <br></br>
+                                    {wine.nutty} 
                                 </Col>
                             </Row>
                             <Row className="displayRow"> 
                                 <Col>
-                                    <u>earthy:</u> {wine.earthy} 
+                                    <u>earthy:</u> 
+                                    <br></br>
+                                    {wine.earthy} 
                                 </Col>
                                 <Col>
-                                    <u>herby:</u> {wine.herby} 
+                                    <u>herby:</u> 
+                                    <br></br>
+                                    {wine.herby} 
                                 </Col>
                                 <Col>
-                                    <u>spicy:</u> {wine.spicy} 
+                                    <u>spicy:</u> 
+                                    <br></br>
+                                    {wine.spicy} 
                                 </Col>
                             </Row>  
                             <Row className="displayRow">
                                 <Col>
-                                    <u>other:</u> {wine.other} 
+                                    <u>other:</u> 
+                                    <br></br>
+                                    {wine.other} 
                                 </Col>
                                 <Col>
-                                    <u>overall:</u> {wine.overall} 
+                                    <u>overall:</u> 
+                                    <br></br>
+                                    {wine.overall} 
                                 </Col>
                             </Row>
                             <Row className="displayRow">

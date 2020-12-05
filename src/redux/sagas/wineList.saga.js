@@ -9,11 +9,13 @@ function* wineListSaga(){
     yield takeEvery ('ADD_WINE', addWine);
 }
 
+//gets wine list from database
 function* fetchWineList(){
     const wineListResponse = yield axios.get('/api/wine');
     yield put ({type: 'SET_WINE_LIST', payload: wineListResponse.data});
 }
 
+//gets all details only for selected wine
 function* getWineDetails(wineClicked){
     console.log('wineClicked.id:', wineClicked.payload.id)
         try {
@@ -26,18 +28,20 @@ function* getWineDetails(wineClicked){
             }
 }
 
+//deletes wine from database
 function* deleteWine(action){
     console.log('delete saga', action)
     yield axios.delete(`/api/wine/${action.payload}`);
     yield put ({type: 'FETCH_WINE_LIST'});
 }
 
+//updates wine information in database
 function* editWine(action){
     console.log('edit wine saga action.payload:', action.payload);
     yield axios.put(`/api/wine/${action.payload.id}` , action.payload);
-    // yield put ({type: 'EDIT_WINE_LIST'});
 }
 
+//adds wine to database
 function* addWine(action){
     yield axios.post('/api/wine', action.payload);
     yield put ({type: 'FETCH_WINE_LIST'});
