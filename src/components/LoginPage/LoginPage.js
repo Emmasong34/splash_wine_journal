@@ -17,7 +17,7 @@ class LoginPage extends Component {
               this.props.history.push('/registration');
             }}
           >
-            Register
+           Register
           </button>
         </center>
       </div>
